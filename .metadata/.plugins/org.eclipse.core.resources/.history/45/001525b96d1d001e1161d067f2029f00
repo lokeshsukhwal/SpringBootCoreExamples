@@ -1,0 +1,21 @@
+#Primitive Type
+com.app.code=101
+com.app.name=lokesh
+
+#Collection Type
+com.app.arrayColors[0]=blue
+com.app.arrayColors[1]=black
+com.app.arrayColors[2]=cyan
+
+com.app.TypeOfAnimalList[0]=Reptiles
+com.app.TypeOfAnimalList[1]=Birds
+com.app.TypeOfAnimalList[2]=Mammals
+
+com.app.BodyPartsSet[0]=Head
+com.app.BodyPartsSet[1]=Face
+com.app.BodyPartsSet[2]=Hair
+
+com.app.languagesMap.java=1
+com.app.languagesMap.oracle=2
+com.app.languagesMap.springboot=3
+

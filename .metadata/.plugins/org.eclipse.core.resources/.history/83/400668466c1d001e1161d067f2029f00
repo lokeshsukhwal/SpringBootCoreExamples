@@ -1,0 +1,67 @@
+package com.app.lokesh.service;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+@Component
+@ConfigurationProperties(prefix = "com.app")
+public class MyService {
+	
+	// Primitive Type Dependency
+	private int code;
+	private String name;
+	
+	// Collection Type Dependency
+	private String[] arrayColors;
+	private List<String> TypeOfAnimalList;
+	private Set<String> BodyPartsSet;
+	
+	private Map<String, Integer> languagesMap;
+	
+	// Reference Type Dependency
+	
+	public int getCode() {
+		return code;
+	}
+	public void setCode(int code) {
+		this.code = code;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String[] getArrayColors() {
+		return arrayColors;
+	}
+	public void setArrayColors(String[] arrayColors) {
+		this.arrayColors = arrayColors;
+	}
+	public List<String> getTypeOfAnimalList() {
+		return TypeOfAnimalList;
+	}
+	public void setTypeOfAnimalList(List<String> typeOfAnimalList) {
+		TypeOfAnimalList = typeOfAnimalList;
+	}
+	public Set<String> getBodyPartsSet() {
+		return BodyPartsSet;
+	}
+	public void setBodyPartsSet(Set<String> bodyPartsSet) {
+		BodyPartsSet = bodyPartsSet;
+	}
+	@Override
+	public String toString() {
+		return "MyService [code=" + code + ", name=" + name + ", arrayColors=" + Arrays.toString(arrayColors)
+				+ ", TypeOfAnimalList=" + TypeOfAnimalList + ", BodyPartsSet=" + BodyPartsSet + "]";
+	}
+	
+	
+	
+	
+}

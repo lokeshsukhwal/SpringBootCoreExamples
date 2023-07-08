@@ -1,0 +1,28 @@
+package com.app.lokesh.catificate;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+import lombok.Data;
+
+/**
+ *  1. @Setter : generates set methods
+	2. @Getter : generates get methods
+	3. @ToString : override toString logic 
+	4. @EqualsAndHashCode: generates equals and hashCode methods
+	5. @NoArgsConstructor : Default/zero param const
+	6. @AllArgsConstructor: All variables selected to create one
+		parameterized constrcutor.
+	7. @RequiredArgsConstructor + @NonNull : To generate selected
+	   parameters constructor.
+	8. @Data : This one is used to generate set/get, toString,
+       equals, hashCode and Required Args Constructor.
+ */
+@Component
+@ConfigurationProperties(prefix = "com.app")
+@Data
+public class Cartificate {
+	private Integer cartificateId;
+	private String provider;
+	private String dateOfIssue;
+}

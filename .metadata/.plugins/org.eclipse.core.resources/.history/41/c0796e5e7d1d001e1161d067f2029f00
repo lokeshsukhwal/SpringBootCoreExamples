@@ -1,0 +1,4 @@
+com.app.driver = mysql
+com.app.url = jdbc:mysql:thin..
+com.app.username = lokesh
+com.app.password = manager

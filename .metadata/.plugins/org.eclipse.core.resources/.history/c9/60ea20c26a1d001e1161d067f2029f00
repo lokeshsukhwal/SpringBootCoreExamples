@@ -1,0 +1,9 @@
+#Primitive Type
+com.app.code=101
+com.app.name=lokesh
+
+#Collection Type
+com.app.arrayColors[0]=blue
+com.app.arrayColors[1]=black
+com.app.arrayColors[2]=cyan
+

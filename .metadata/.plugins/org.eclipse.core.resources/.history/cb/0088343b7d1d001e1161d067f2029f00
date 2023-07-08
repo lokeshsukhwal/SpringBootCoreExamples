@@ -1,0 +1,4 @@
+com.app.driver = oracle
+com.app.url = jdbc:oracle:thin..
+com.app.username = lokesh
+com.app.password = manager

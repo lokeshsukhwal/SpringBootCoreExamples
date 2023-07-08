@@ -1,0 +1,6 @@
+com:
+  app:
+    host: gmail
+    password: manager
+    provider: google
+    username: lokesh

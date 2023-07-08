@@ -1,0 +1,14 @@
+package com.app.lokesh.config;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+@Component
+@ConfigurationProperties(prefix = "com.app")
+public class EmailProvider {
+	
+	private Integer host;
+	private String provider;
+	private String username;
+	private String password;
+}

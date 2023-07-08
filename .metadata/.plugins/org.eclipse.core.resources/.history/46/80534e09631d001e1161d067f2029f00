@@ -1,0 +1,5 @@
+# simple properties file
+my.app.driver=oracle
+my.app.url=jdbc:oracle
+my.app.username=system
+my.app.password=manager

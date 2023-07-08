@@ -1,0 +1,12 @@
+package com.app.lokesh.catificate;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+@Component
+@ConfigurationProperties(prefix = "com.app")
+public class Cartificate {
+	private Integer cartificateId;
+	private String provider;
+	private String dateOfIssue;
+}

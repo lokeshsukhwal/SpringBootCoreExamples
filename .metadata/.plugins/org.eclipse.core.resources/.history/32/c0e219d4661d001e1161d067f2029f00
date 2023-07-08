@@ -1,0 +1,21 @@
+package com.app.lokesh.service;
+
+import java.util.List;
+import java.util.Set;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class MyService {
+	
+	// Primitive Type Dependency
+	private int code;
+	private String name;
+	
+	// Collection Type Dependency
+	private String[] arrayColors;
+	private List<String> TypeOfAnimalList;
+	private Set<String> BodyPartsSet;
+	
+	// Reference Type Dependency
+}

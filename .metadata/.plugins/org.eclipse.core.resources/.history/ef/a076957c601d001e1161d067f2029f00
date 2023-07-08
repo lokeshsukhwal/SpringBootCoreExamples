@@ -1,0 +1,25 @@
+package com.app.lokesh.runner;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
+/**
+ * 1. We can define multiple runners in one application 
+   2. They are executed in naming order. 
+   3. We can provide our own order using @Order(int) annotation If
+      no annotation @Order is provided then default value is
+      Integer.MAX_VALUE (2147483647) 
+   4. If multiple Runners are having same order then again naming
+      rule is applied. 
+ */
+@Component
+@Order(10)
+public class MySqlRunner implements CommandLineRunner {
+
+	@Override
+	public void run(String... args) throws Exception {
+		System.out.println("From MySqlRunner...");
+	}
+
+}

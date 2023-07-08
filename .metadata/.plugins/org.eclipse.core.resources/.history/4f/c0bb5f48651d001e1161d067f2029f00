@@ -1,0 +1,34 @@
+package com.app.lokesh.db;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+/**
+ * In that example we are reading data from properties file
+ * using @Value but the problem is that we have to write 
+ * @Value from each variable suppose if we have 200 keys
+ * in properties then it is burden to write for each variable
+ * so in next example we have to resolve this problem
+ */
+@Component
+public class DatabaseConfigration {
+	@Value("${my.app.driver}")
+	private String driver;
+	
+	@Value("${my.app.url}")
+	private String url;
+	
+	@Value("${my.app.username}")
+	private String username;
+	
+	@Value("${my.app.password}")
+	private String password;
+
+	@Override
+	public String toString() {
+		return "DatabaseConfigration [driver=" + driver + ", url=" + url + ", username=" + username + ", password="
+				+ password + "]";
+	}
+	
+	
+}

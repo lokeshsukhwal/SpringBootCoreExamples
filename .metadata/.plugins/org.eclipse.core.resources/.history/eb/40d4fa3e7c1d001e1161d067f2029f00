@@ -1,0 +1,9 @@
+package com.app.lokesh.db;
+
+/**
+ * Environment : A complete setup to run application.(DB,server,config, dep)
+                 Example: Dev, QA, UAT(Client test), Prod, PordSup..etc
+ */
+public class DatabaseConnection {
+
+}
